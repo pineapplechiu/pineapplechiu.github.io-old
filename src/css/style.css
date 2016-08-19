@@ -1,0 +1,9 @@
+.hero {
+  min-height: 200px; }
+  @media (min-width: 992px) {
+    .hero {
+      height: 100vh; } }
+
+@media (min-width: 992px) {
+  .main {
+    height: 100vh; } }
