@@ -1,30 +1,22 @@
 var gulp  = require('gulp');
 var sass  = require('gulp-sass');
-var watch = require('gulp-watch');
-var bs    = require('browser-sync');
+var bs    = require('browser-sync').create();
 
 gulp.task('sass', function () {
-  return gulp.src('src/css/**/*.+(scss|sass)')
+  return gulp.src('css/**/*.+(scss|sass)')
     .pipe(sass())
-    .pipe(gulp.dest('src/css'))
-    .pipe(bs.reload({
-      stream: true
-    }));
+    .pipe(gulp.dest('css'))
+    .pipe(bs.stream());
 });
 
-gulp.task('bs', function () {
-  bs({
-    server: {
-      baseDir: 'src/',
-    },
-    open: false, // don't open browser
-    notify: false // don't show browserSync notification/ad
+gulp.task('serve', ['sass'], function () {
+  bs.init({
+    server: './',
+    notify: false
   });
+
+  gulp.watch('css/**/*.+(scss|sass)', ['sass']);
+  gulp.watch('index.html').on('change', bs.reload);
 });
 
-gulp.task('watch', ['bs'], function () {
-  gulp.watch('src/css/**/*.+(scss|sass)', ['sass']);
-  gulp.watch('src/index.html', bs.reload);
-});
-
-gulp.task('default', ['watch']);
+gulp.task('default', ['serve']);
