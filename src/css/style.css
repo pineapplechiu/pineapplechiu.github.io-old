@@ -1,9 +1,25 @@
-.hero {
+.container-inner {
+  max-width: 992px;
+  margin: 0 auto; }
+
+.section-hero {
   min-height: 200px; }
   @media (min-width: 992px) {
-    .hero {
+    .section-hero .section-hero-inner {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       height: 100vh; } }
 
 @media (min-width: 992px) {
-  .main {
-    height: 100vh; } }
+  .section-main {
+    height: 100vh;
+    overflow-y: scroll; } }
+
+.u-padded {
+  padding: 10px;
+  padding-bottom: 20px; }
+  @media (min-width: 992px) {
+    .u-padded {
+      padding: 20px;
+      padding-bottom: 40px; } }

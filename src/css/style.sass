@@ -1,8 +1,24 @@
-.hero
+.container-inner
+  max-width: 992px
+  margin: 0 auto
+
+.section-hero
   min-height: 200px
   @media (min-width: 992px)
-    height: 100vh
-    
-.main
+    .section-hero-inner
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      height: 100vh
+
+.section-main
   @media (min-width: 992px)
     height: 100vh
+    overflow-y: scroll
+
+.u-padded
+  padding: 10px
+  padding-bottom: 20px
+  @media (min-width: 992px)
+    padding: 20px
+    padding-bottom: 40px
