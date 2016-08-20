@@ -5,6 +5,7 @@
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="/js/script.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,300,700,600italic' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,700italic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -13,12 +14,19 @@
 <body>
   <div class="container-fluid">
     <div class="row">
+
       <div class="col-xs-12 col-md-3 section-hero">
         <div class="row">
           <div class="col-xs-12 section-hero-inner">
             <div class="u-padded">
               <h1>Hello</h1>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, perferendis. Repellendus et ab temporibus perspiciatis dolor, sapiente, accusantium pariatur cumque. At vel fugiat similique eligendi, minus aliquid numquam voluptatibus labore!</p>
+              <br>
+              <h4>PROJECTS</h4>
+              <ul class="nav-list">
+                <li><a href="#" class="nav-item">BLOG</a></li>
+                <li><a href="#" class="nav-item">READ ME</a></li>
+              </ul>
             </div>
             <div class="u-padded">
               <a class="link-icon" href="#"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
@@ -29,6 +37,7 @@
           </div>
         </div> 
       </div>
+
       <div class="col-xs-12 col-md-9 section-main">
 
         <div class="container-inner">
@@ -83,7 +92,7 @@
           <div class="row">
             <div class="col-xs-12">
               <div class="u-padded u-border">
-                <h2>About</h2>
+                <h2>ABOUT</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, perferendis. Repellendus et ab temporibus perspiciatis dolor, sapiente, accusantium pariatur cumque. At vel fugiat similique eligendi, minus aliquid numquam voluptatibus labore!</p>
                 <a href="#" class="btn link-button">Resume</a>
               </div>
@@ -93,7 +102,7 @@
           <div class="row">
             <div class="col-xs-12">
               <div class="u-padded u-border">
-                <h2>Work</h2>
+                <h2>WORK</h2>
                 <div class="media">
                   <div class="media-left">
                     <a href="#">
@@ -134,22 +143,22 @@
           <div class="row">
             <div class="col-xs-12">
               <div class="u-padded">
-                <h2>Contact</h2>
+                <h2>CONTACT</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam quas vel, necessitatibus. Maxime voluptate, natus. Minus quae praesentium a laborum, consequuntur aliquid mollitia, tenetur ratione sint quasi molestias reiciendis aliquam?</p>
-                <form>
+                <form action="//formspree.io/chiupaula@gmail.com" method="POST">
                   <div class="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="you@example.com">
+                    <label for="formName">Name</label>
+                    <input type="text" name="name" class="form-control form-input" id="formName" placeholder="Sir? Madam? Doc?">
                   </div>
                   <div class="form-group">
-                    <label for="exampleInputPassword1">Name</label>
-                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Name">
+                    <label for="formEmail">Email</label>
+                    <input type="email" name="_replyto" class="form-control form-input" id="formEmail" placeholder="you@example.com">
                   </div>
                   <div class="form-group">
-                    <label for="exampleTextArea">Your Message</label>
-                    <textarea class="form-control" id="exampleTextArea" placeholder="Tell me what you think!" rows="3"></textarea>
+                    <label for="formBody">Message</label>
+                    <textarea class="form-control form-input" name="body" id="formBody" placeholder="Ready... Set... Go!" rows="3"></textarea>
                   </div>
-                  <button type="submit" class="btn btn-default">Send! <i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+                  <button type="submit" class="btn link-button" class="form-input"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
                 </form>
               </div>
             </div>  
@@ -160,5 +169,8 @@
       </div>
     </div>
   </div>
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  
 </body>
 </html>
