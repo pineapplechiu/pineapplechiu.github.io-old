@@ -5,14 +5,16 @@ ul {
 .nav-list {
   border-left: 1px dotted;
   padding: 0 10px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-decoration: none; }
 
 .nav-item {
-  font-family: 'Merriweather', serif;
+  font-family: 'Noto Serif', serif;
   font-size: 12px;
   font-weight: 300;
-  color: #555555;
-  letter-spacing: .3em; }
+  color: #c0c0c0;
+  letter-spacing: .1em;
+  text-decoration: none; }
 
 .back-to-top {
   height: 20px;
@@ -50,7 +52,8 @@ h3 {
 
 h4 {
   margin: 0 auto 20px;
-  color: #555555;
+  color: #c0d7d2;
+  font-size: 20px;
   font-weight: 100; }
 
 p, a li, span {
@@ -63,8 +66,14 @@ p {
 label {
   color: #84CDC2; }
 
+a {
+  color: #c0c0c0; }
+
 a:hover {
-  text-decoration: none; }
+  color: #d48c74;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(241, 140, 121, 0.5);
+  transition: border-bottom-color 0.2s ease-in; }
 
 .form-input {
   border-radius: 0; }
@@ -73,26 +82,24 @@ a:hover {
   color: #d48c74;
   text-decoration: none; }
 
-.link-text {
-  border-bottom: 1px solid rgba(241, 140, 121, 0.5);
-  transition: border-bottom-color 0.2s ease-in; }
-  .link-text:hover {
-    border-bottom-color: #f18c79; }
+.link-text:hover {
+  border-bottom-color: #f18c79; }
 
 .link-button {
-  color: #555555;
+  color: #c0d7d2;
   background-color: transparent;
-  border: 1.5px solid #c0c0c0;
+  border: 1.5px dotted #c0c0c0;
   border-radius: 0; }
   .link-button:hover {
-    color: #555555;
-    border: 1.5px solid #84CDC2; }
+    color: #84CDC2;
+    border: 1.5px solid #c0c0c0; }
 
 .container-inner {
   max-width: 992px;
   margin: 0 auto; }
 
 .section-hero {
+  background-color: #F2F2F2;
   min-height: 200px; }
   @media (min-width: 992px) {
     .section-hero .section-hero-inner {
@@ -101,10 +108,12 @@ a:hover {
       justify-content: space-between;
       height: 100vh; } }
 
-@media (min-width: 992px) {
-  .section-main {
-    height: 100vh;
-    overflow-y: scroll; } }
+.section-main {
+  background-color: #F7F7F7; }
+  @media (min-width: 992px) {
+    .section-main {
+      height: 100vh;
+      overflow-y: scroll; } }
 
 .u-padded {
   margin: 0 10px;
