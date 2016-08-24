@@ -52,7 +52,7 @@ h3 {
 
 h4 {
   margin: 0 auto 20px;
-  color: #c0d7d2;
+  color: #555555;
   font-size: 20px;
   font-weight: 100; }
 
@@ -71,9 +71,7 @@ a {
 
 a:hover {
   color: #d48c74;
-  text-decoration: none;
-  border-bottom: 1px solid rgba(241, 140, 121, 0.5);
-  transition: border-bottom-color 0.2s ease-in; }
+  text-decoration: none; }
 
 .form-input {
   border-radius: 0; }
@@ -82,14 +80,18 @@ a:hover {
   color: #d48c74;
   text-decoration: none; }
 
-.link-text:hover {
-  border-bottom-color: #f18c79; }
+.link-text {
+  border-bottom: 1px solid rgba(241, 140, 121, 0.25);
+  transition: border-bottom-color 0.2s ease-in; }
+  .link-text:hover {
+    border-bottom-color: #f18c79; }
 
 .link-button {
   color: #c0d7d2;
   background-color: transparent;
   border: 1.5px dotted #c0c0c0;
-  border-radius: 0; }
+  border-radius: 0;
+  transition-duration: 0.2s; }
   .link-button:hover {
     color: #84CDC2;
     border: 1.5px solid #c0c0c0; }
