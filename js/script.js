@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  var offset = 220;
+  var offset = 200;
   var duration = 500;
 
   var $win = $(window);
